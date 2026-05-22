@@ -1,0 +1,3 @@
+
+This is my notes file.
+Learning Node.js File System module.
