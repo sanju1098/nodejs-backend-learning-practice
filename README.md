@@ -5,3 +5,5 @@
 ### DAY 4 - Production-Style Todo API
 
 ### DAY 5 - Production Backend Folder Structure
+
+### Day 6 — Environment Variables + Config Management
