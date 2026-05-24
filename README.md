@@ -9,3 +9,5 @@
 ### Day 6 — Environment Variables + Config Management
 
 ### Day 7 — Mini Backend Project: Notes API
+
+### Day 8 — Databases Fundamentals
