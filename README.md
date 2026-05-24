@@ -6,12 +6,12 @@
 
 ### DAY 5 - Production Backend Folder Structure
 
-### Day 6 — Environment Variables + Config Management
+### Day 6 - Environment Variables + Config Management
 
-### Day 7 — Mini Backend Project: Notes API
+### Day 7 - Mini Backend Project: Notes API
 
-### Day 8 — Databases Fundamentals
+### Day 8 - Databases Fundamentals
 
-### Day 9 — MongoDB + Mongoose
+### Day 9 - MongoDB + Mongoose
 
-### Day 10 — Advanced MongoDB
+### Day 10 - Advanced MongoDB
