@@ -7,3 +7,5 @@
 ### DAY 5 - Production Backend Folder Structure
 
 ### Day 6 — Environment Variables + Config Management
+
+### Day 7 — Mini Backend Project: Notes API
