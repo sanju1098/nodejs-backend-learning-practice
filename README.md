@@ -11,3 +11,4 @@
 | DAY 8  | Database Fundamentals                     |
 | DAY 9  | MongoDB + Mongoose                        |
 | DAY 10 | Advanced MongoDB                          |
+| DAY 11 | Authentication Basics                     |
