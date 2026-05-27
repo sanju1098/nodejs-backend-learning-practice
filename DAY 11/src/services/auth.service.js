@@ -16,12 +16,9 @@ async function registerUser(userData) {
 
   const user = await User.create({
     name: userData.name,
-
     email: userData.email,
-
     password: hashedPassword,
   });
-
   return user;
 }
 
