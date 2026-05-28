@@ -19,11 +19,26 @@ async function registerUser(userData) {
     email: userData.email,
     password: hashedPassword,
   });
-  return user;
+  // return user;
+  return {
+    // Response Sanitization
+    id: user._id,
+    name: user.name,
+    email: user.email,
+    role: user.role,
+  };
 }
 
 async function loginUser(email, password) {
-  const user = await User.findOne({ email });
+  // const user = await User.findOne({ email });
+  /**
+    Temporarily includes hidden password field.
+    Only for login comparison.
+   */
+
+  const user = await User.findOne({
+    email,
+  }).select("+password");
 
   if (!user) {
     throw new Error("Invalid credentials");
@@ -48,7 +63,14 @@ async function loginUser(email, password) {
 
   return {
     token,
-    user,
+    // user,
+    // Response Sanitization
+    user: {
+      id: user._id,
+      name: user.name,
+      email: user.email,
+      role: user.role,
+    },
   };
 }
 
