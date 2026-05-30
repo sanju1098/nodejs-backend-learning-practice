@@ -4,11 +4,7 @@ const validate = (schema) => (req, res, next) => {
 
     next();
   } catch (error) {
-    return res.status(400).json({
-      success: false,
-
-      errors: error.issues,
-    });
+    next(new ApiError(401, "Invalid token"));
   }
 };
 
