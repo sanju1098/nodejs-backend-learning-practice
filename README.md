@@ -15,3 +15,4 @@
 | DAY 12 | Production-Style Authentication System           |
 | DAY 13 | Authorization + Security                         |
 | DAY 14 | Authenticated Notes Backend (Production Version) |
+| DAY 15 | Advanced Error Handling & Production Patterns    |
