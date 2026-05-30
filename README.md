@@ -13,3 +13,4 @@
 | DAY 10 | Advanced MongoDB                          |
 | DAY 11 | Authentication Basics                     |
 | DAY 12 | Production-Style Authentication System    |
+| DAY 13 | Authorization + Security                  |
