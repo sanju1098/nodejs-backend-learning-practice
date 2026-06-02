@@ -19,3 +19,4 @@
 | DAY 16 | TypeScript Fundamentals for Node.js Backend      |
 | DAY 17 | Prisma ORM with MongoDB                          |
 | DAY 18 | Logging & Debugging in Node.js                   |
+| DAY 19 | File Uploads with Node.js, Express & Multer      |
