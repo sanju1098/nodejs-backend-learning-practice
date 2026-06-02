@@ -18,3 +18,4 @@
 | DAY 15 | Advanced Error Handling & Production Patterns    |
 | DAY 16 | TypeScript Fundamentals for Node.js Backend      |
 | DAY 17 | Prisma ORM with MongoDB                          |
+| DAY 18 | Logging & Debugging in Node.js                   |
