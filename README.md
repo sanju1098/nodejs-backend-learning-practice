@@ -21,3 +21,4 @@
 | DAY 18 | Logging & Debugging in Node.js                   |
 | DAY 19 | File Uploads with Node.js, Express & Multer      |
 | DAY 20 | Deployment with Render                           |
+| DAY 21 | Docker Fundamentals for Node.js                  |
