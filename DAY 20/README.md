@@ -244,7 +244,7 @@ This allows connections from anywhere.
 Example:
 
 ```env
-mongodb+srv://admin:admin123@cluster.mongodb.net/notesdb
+<mongo_db_path>
 ```
 
 Save this for deployment.
