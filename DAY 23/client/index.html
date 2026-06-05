@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socket.IO Chat</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 40px auto;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      #chat-container {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      #messages {
+        list-style: none;
+        padding: 0;
+        height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+      }
+
+      #messages li {
+        padding: 8px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .input-group {
+        display: flex;
+        gap: 10px;
+      }
+
+      input {
+        flex: 1;
+        padding: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      .status {
+        margin-bottom: 10px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chat-container">
+      <h2>Socket.IO Chat App</h2>
+
+      <div class="status" id="status">Connecting...</div>
+
+      <ul id="messages"></ul>
+
+      <div class="input-group">
+        <input type="text" id="message" placeholder="Enter message..." />
+
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+
+    <script>
+      const socket = io("http://localhost:5000");
+
+      const status = document.getElementById("status");
+
+      const messages = document.getElementById("messages");
+
+      socket.on("connect", () => {
+        status.innerText = `Connected : ${socket.id}`;
+
+        console.log("Connected:", socket.id);
+      });
+
+      socket.on("disconnect", () => {
+        status.innerText = "Disconnected";
+
+        console.log("Disconnected");
+      });
+
+      function sendMessage() {
+        const input = document.getElementById("message");
+
+        const message = input.value.trim();
+
+        if (!message) return;
+
+        socket.emit("send_message", message);
+
+        input.value = "";
+      }
+
+      socket.on("receive_message", (message) => {
+        const li = document.createElement("li");
+
+        li.innerText = message;
+
+        messages.appendChild(li);
+
+        messages.scrollTop = messages.scrollHeight;
+      });
+    </script>
+  </body>
+</html>
