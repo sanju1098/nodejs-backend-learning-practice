@@ -25,3 +25,4 @@
 | DAY 22 | Redis & Caching with Node.js                     |
 | DAY 23 | Socket.IO & Real-Time Communication              |
 | DAY 24 | Testing APIs with Jest & Supertest               |
+| DAY 25 | Backend Optimization & Performance               |
