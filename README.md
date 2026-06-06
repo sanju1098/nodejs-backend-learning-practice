@@ -24,3 +24,4 @@
 | DAY 21 | Docker Fundamentals for Node.js                  |
 | DAY 22 | Redis & Caching with Node.js                     |
 | DAY 23 | Socket.IO & Real-Time Communication              |
+| DAY 24 | Testing APIs with Jest & Supertest               |
