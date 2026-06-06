@@ -1,4 +1,4 @@
-# 🚀 Day 27 - Backend Optimization & Performance
+# Backend Optimization & Performance
 
 # Why Backend Optimization Matters?
 
